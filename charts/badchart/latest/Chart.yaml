@@ -1,5 +1,5 @@
-name: trying-a-name_with_underscores-and_dashes
-version: 1.0.0
+name: trying-a-name
+version: 0.2.7+1.25.8-5
 appVersion: 1.0.0	
 description: Blah blah
 icon: https://foldingathome.org/wp-content/uploads/2016/10/cropped-foldingathome-logo.png
