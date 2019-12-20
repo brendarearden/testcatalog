@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "foo3615.fullname" . }}-test-connection"
+  labels:
+{{ include "foo3615.labels" . | indent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['{{ include "foo3615.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
