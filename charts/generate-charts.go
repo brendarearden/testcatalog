@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	for i := 1; i < 2000; i++ {
-		chartName := fmt.Sprintf("bar%v", i)
+	for i := 1; i < 4001; i++ {
+		chartName := fmt.Sprintf("moo%v", i)
 		cmd := exec.Command("helm", "create", chartName)
 		cmd.Run()
 	}
